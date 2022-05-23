@@ -1,0 +1,35 @@
+diff b/w String and StringBuilder:-
+-----------------------------------------
+A string is immutable because to save the memory space
+
+String s1 = "Hello";
+String s2 = "Hello";
+
+now if we print
+
+System.out.println(s1 == s2) o/p:- true |because both point to same memory
+
+now suppose if we want to change s1 = "Hello+10";
+it is not possible because String is immutable.
+
+So in some we want String to be Mutable.So for that reason we have StringBuilder.
+
+StringBuilder s1 = new StringBuilder("Hello");
+StringBuilder s2 = new StringBuilder(""Hello");
+
+Here because of StringBuiler both will have different memory address.
+
+and the Strings are mutable i.e
+we can write 
+
+s1.append("10")
+the String s1 will be changed
+
+methos of Strings:-
+---------------------
+
+s1.length() //5
+s1.charAt(2)//l
+s1.substring(2)//lo
+s1.substring(1,2) //Hlo
+s1.indeof(o)  // 4
